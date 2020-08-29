@@ -21,8 +21,7 @@ void main() {
             "Day1 \ncode",
             textAlign: TextAlign.center,
             style: TextStyle(
-              color: Colors.blue,
-            ),
+                color: Colors.blue, fontSize: 24, fontWeight: FontWeight.w600),
           ),
         ),
       ),
