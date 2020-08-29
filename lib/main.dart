@@ -17,7 +17,13 @@ void main() {
           centerTitle: true,
         ),
         body: Center(
-          child: Text("Day1 code"),
+          child: Text(
+            "Day1 \ncode",
+            textAlign: TextAlign.center,
+            style: TextStyle(
+              color: Colors.blue,
+            ),
+          ),
         ),
       ),
     ),
