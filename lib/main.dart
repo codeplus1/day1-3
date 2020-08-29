@@ -1,30 +1,19 @@
+import 'package:day_1/pages/homepage.dart';
 import 'package:flutter/material.dart';
 
-void main() {
-  //void main is main function
-  //runApp is a function
-  runApp(
-    MaterialApp(
-      theme: ThemeData(
-        primarySwatch: Colors.red,
-      ),
-      debugShowCheckedModeBanner: false,
-      title: "day1",
-      home: Scaffold(
-        drawer: Drawer(),
-        appBar: AppBar(
-          title: Text("day1"),
-          centerTitle: true,
+void main() => runApp(MyApp());
+//void main is main function
+//runApp is a function
+
+class MyApp extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+        theme: ThemeData(
+          primarySwatch: Colors.red,
         ),
-        body: Center(
-          child: Text(
-            "Day1 \ncode",
-            textAlign: TextAlign.center,
-            style: TextStyle(
-                color: Colors.blue, fontSize: 24, fontWeight: FontWeight.w600),
-          ),
-        ),
-      ),
-    ),
-  );
+        debugShowCheckedModeBanner: false,
+        title: "day1",
+        home: HomePage());
+  }
 }
